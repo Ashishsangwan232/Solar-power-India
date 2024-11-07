@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        body{
+            background-color: #00010f;
+        font-family: Arial, sans-serif;
+
+        }
+        .topmost{
+        justify-content: space-between;
+        backdrop-filter: blur(2px);
+        box-shadow: 0px 0px 20px rgb(0, 0, 0);
+    }
+    .topmost img{
+        width: 90px;
+    }
+    .logo a{
+        color: #ffffff;
+        text-decoration: none;
+    }
+    .topmost{
+        display: flex;
+        justify-content:space-between;
+    }
+    .logo{
+        display: flex;
+        padding: 2px;
+    }
+    #com_name{
+        letter-spacing: 2px;
+        text-align:start;
+        align-content: center;
+        font-size: 25px;
+    }
+    .logo a:hover{
+        color: rgb(255, 244, 232);
+    }
+    .links {
+        /* border: 2px solid red; */
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .links a {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 9px;
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 10px;
+        letter-spacing: 2px;
+        border-radius: 15px;
+        transition: all 0.3s ease;
+    }
+    
+    .links a:hover {
+        letter-spacing: 1px;
+        background-color: white;
+        color: #000000;
+        font-weight: 700;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        fill: #000000;
+        
+    }
+    .links a:hover svg{
+        fill: #000000;
+    }
+    
+    .links svg {
+        width: 100%;
+        width: 18px;
+        height: 18px;
+        fill: #ffffff;
+    }
+    
+    .hlink {
+        align-content: center;
+    }
+    
+    
+
+.about-section {
+    margin: 40px auto;
+    padding: 40px;
+    max-width: 800px;
+    background-color: #10102b;
+    color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.about-section h2 {
+    text-align: center;
+    color: #e0b54a;
+    font-size: 28px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e0b54a;
+    padding-bottom: 10px;
+}
+
+.about-section h3 {
+    color: #e0b54a;
+    font-size: 20px;
+    margin-top: 25px;
+    border-bottom: 1px solid #e0b54a;
+    padding-bottom: 5px;
+}
+
+.about-section p {
+    margin: 15px 0;
+    color: #cccccc;
+}
+
+.about-section ul {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.about-section ul li {
+    color: #dcdcdc;
+    margin: 10px 0;
+}
+
+.about-section ul li strong {
+    color: #e0b54a;
+}
+
+    </style>
+</head>
+<body>
+    <div class="topmost">
+        <div class="logo">
+            <a href="index.html"><img src="logo1.png" alt="logo">
+                <h2 id="com_name"><a href="index.html">Solar Power <br>India</a></h2>
+               </a>
+        </div>
+        <div class="hlink">
+            <nav class="links">
+                    <a href="index.html" class="actv" > <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#e8eaed"><path d="M360-440h80v-110h80v110h80v-190l-120-80-120 80v190Zm120 254q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg> Home</a>
+                    <a href="news.html"> <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#e8eaed"><path d="M560-564v-68q33-14 67.5-21t72.5-7q26 0 51 4t49 10v64q-24-9-48.5-13.5T700-600q-38 0-73 9.5T560-564Zm0 220v-68q33-14 67.5-21t72.5-7q26 0 51 4t49 10v64q-24-9-48.5-13.5T700-380q-38 0-73 9t-67 27Zm0-110v-68q33-14 67.5-21t72.5-7q26 0 51 4t49 10v64q-24-9-48.5-13.5T700-490q-38 0-73 9.5T560-454ZM260-320q47 0 91.5 10.5T440-278v-394q-41-24-87-36t-93-12q-36 0-71.5 7T120-692v396q35-12 69.5-18t70.5-6Zm260 42q44-21 88.5-31.5T700-320q36 0 70.5 6t69.5 18v-396q-33-14-68.5-21t-71.5-7q-47 0-93 12t-87 36v394Zm-40 118q-48-38-104-59t-116-21q-42 0-82.5 11T100-198q-21 11-40.5-1T40-234v-482q0-11 5.5-21T62-752q46-24 96-36t102-12q58 0 113.5 15T480-740q51-30 106.5-45T700-800q52 0 102 12t96 36q11 5 16.5 15t5.5 21v482q0 23-19.5 35t-40.5 1q-37-20-77.5-31T700-240q-60 0-116 21t-104 59ZM280-494Z"/></svg> News</a>                            
+                    <a href="about.html"> <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#e8eaed"><path d="M270-80q-45 0-77.5-30.5T160-186v-558q0-38 23.5-68t61.5-38l395-78v640l-379 76q-9 2-15 9.5t-6 16.5q0 11 9 18.5t21 7.5h450v-640h80v720H270Zm90-233 200-39v-478l-200 39v478Zm-80 16v-478l-15 3q-11 2-18 9.5t-7 18.5v457q5-2 10.5-3.5T261-293l19-4Zm-40-472v482-482Z"/></svg> About</a>
+                    <a href="login.html"> <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#e8eaed"><path d="M480-120v-80h280v-560H480v-80h280q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H480Zm-80-160-55-58 102-102H120v-80h327L345-622l55-58 200 200-200 200Z"/></svg> Login</a>
+            </nav>
+        </div>
+    </div>
+    <div class="about-section">
+        <h2>About Solar Power India</h2>
+        <p>Solar Power India is a comprehensive platform dedicated to promoting the growth and understanding of solar energy in India. As one of the world’s leaders in solar power capacity, India is paving the way towards a sustainable future, and our mission is to support this transition by providing accessible information, resources, and opportunities for all.</p>
+        
+        <h3>Our Mission</h3>
+        <p>Our mission is to empower individuals, communities, and organizations with the knowledge and tools needed to adopt and benefit from solar energy. By doing so, we aim to contribute to India's efforts in reducing carbon emissions, creating green jobs, and ensuring energy security for future generations.</p>
+        
+        <h3>Our Vision</h3>
+        <p>We envision a future where every home, business, and community in India has access to clean, affordable solar energy. By advancing solar adoption, we aim to combat climate change, stimulate economic growth, and create a sustainable environment for all.</p>
+        
+        <h3>What We Do</h3>
+        <ul>
+            <li><strong>Educational Resources:</strong> We provide in-depth articles, guides, and resources on solar energy, helping users understand its benefits, technologies, and installation processes.</li>
+            <li><strong>Job Opportunities:</strong> Our platform includes a dedicated section for solar industry job listings, connecting job seekers with opportunities in this growing sector.</li>
+            <li><strong>Latest News & Updates:</strong> Stay informed with the latest news, advancements, and policy updates in the solar energy sector, both in India and worldwide.</li>
+            <li><strong>Interactive State-by-State Guide:</strong> Discover solar projects, job opportunities, and relevant solar policies by exploring our interactive map of India, offering insights specific to each state.</li>
+            <li><strong>Community Engagement:</strong> We encourage community involvement through events, webinars, and workshops, empowering people to make informed decisions about solar energy.</li>
+        </ul>
+        
+        <h3>Why Solar?</h3>
+        <p>Solar energy is a clean, renewable resource with the potential to revolutionize the energy landscape. With its low carbon footprint and declining costs, solar power is ideal for meeting India’s growing energy demands. By promoting solar, we are not only helping reduce reliance on fossil fuels but also supporting the government’s ambitious goals of energy independence and sustainability.</p>
+        
+        <h3>Join Us on Our Journey</h3>
+        <p>Whether you’re a student, a professional, a homeowner, or simply curious about solar energy, Solar Power India welcomes you to join us on this journey toward a greener, more sustainable future. Together, we can make a difference and inspire others to do the same.</p>
+    </div>
+    
+</body>
+</html>

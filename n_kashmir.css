@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    }
+    body{
+        background-color: #000000;
+        font-family: Arial, sans-serif;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(15,1fr);
+        grid-template-rows: repeat(65,1fr);
+    }
+    .top-bar{
+        align-content: center;
+        background-image: url(sky\ back.png);
+        background-position: center;
+        background-size: cover;
+        grid-area: 1/1/5/16;
+        padding:10px 0px;
+        
+    }
+    .topmost{
+        justify-content: space-between;
+        background-color: transparent;
+        backdrop-filter: blur(2px);
+        box-shadow: 0px 0px 20px rgb(0, 0, 0);
+    }
+    .topmost img{
+        width: 100px;
+    }
+    .logo a{
+        color: #ffffff;
+        text-decoration: none;
+    }
+    .topmost{
+        display: flex;
+        justify-content:space-between;
+    }
+    .logo{
+        display: flex;
+        padding: 10px;
+    }
+    .logo h1{
+        letter-spacing: 2px;
+        align-content: center;
+        font-size: 35px;
+    }
+    .logo a:hover{
+        color: rgb(255, 251, 246);
+    }
+    .links{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 10px;
+    }
+    .links a{
+        letter-spacing: 2px;
+        padding: 5px;
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 20px;
+    } 
+    .links a:hover{
+        letter-spacing: 0px;
+        background-color:white ;
+        color: #000000;
+        font-weight:700;
+        border-radius: 20px;
+    }
+    .links a:hover svg{
+        fill: #000000;
+    }
+    .links svg {
+        width: 100%;
+        width: 18px;
+        height: 18px;
+        fill: #ffffff;
+    }
+    /* .links a.actv{
+        color: #000000;
+        background-color:rgb(255, 255, 255) ;
+        font-weight:700;
+        border-radius: 20px;
+        
+    } */
+    /* .topmost nav:hover >a:not(:hover){
+        background-color: transparent;
+        color: #ffffff;
+    }                     */
+    .side_bar{
+        background-color: rgb(0, 0, 0);
+        box-shadow: 0px 0px 10px rgba(115, 115, 115, 0.514) inset;
+        grid-area: 5/1/66/2;
+    }
+    
+    header .side2{
+        max-width: 300px;
+        margin: auto;
+        padding:9px;
+    }
+    .side2{
+        padding-top: 20px;
+    }
+    .side2 nav a{
+        color: #ffffff;
+        font-size: 20px;
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px;
+        text-decoration: none;
+        text-align: center;
+        border-bottom-left-radius: 15px;
+        border-top-left-radius: 15px;
+    }
+    .side2 .active{
+        color: #000000;
+        background-color: #ffffffbe;
+    } 
+    .side2 a:hover{
+        color: #000000;
+        background-color: aliceblue;
+    }
+    .side2 nav:hover > a:not(:hover){
+        background-color: transparent;
+        color: #ffffff;
+    }
+    .content{
+        background-image:linear-gradient(to bottom right, rgb(0, 25, 123), black,rgb(0, 0, 46) , black,rgb(15, 0, 131));
+        grid-area:5/2/66/16;
+    }
+    .container2{
+        background-color: transparent;
+        backdrop-filter: blur(2px);
+        backdrop-filter: opacity(0.2);
+        box-shadow: 0px 0px 5px rgb(60, 60, 60);
+        margin: 6px;
+        margin-top: 0;
+        padding-top: 0;
+        
+    }
+    .solar{
+        border-bottom-left-radius:50px ;
+        border-bottom-right-radius:50px ;
+        box-shadow:0px 0px 15px rgb(0, 0, 0) inset;
+        display: flex;
+        flex-wrap: wrap;
+        height: 150px;
+        color: rgb(255, 255, 255);
+        align-items: center;
+        background-image: url(sky\ black\ grey.png);
+        background-position: center;
+        background-size: cover;
+    }
+    .solar p{
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        font-weight: 600;
+        font-size: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    .tbl{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+        padding: 10px;
+    }
+    .tbl::-webkit-scrollbar{
+        height: 12px;
+    }
+    .tbl::-webkit-scrollbar-track{
+        background: #ffffff;
+        border-radius: 21px;
+    }
+    .tbl::-webkit-scrollbar-thumb{
+        background: rgb(75, 75, 75);
+        border-radius: 3px;
+    }
+    .tbl::-webkit-scrollbar-thumb:hover{
+        background: rgb(123, 123, 123);
+        border-radius: 20px;
+    }
+    .tble{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        color: #ffffff;
+        border-collapse:collapse;
+    }
+    .tbl th,td{
+        padding: 10px;
+        font-size: 20px;
+        font-weight: 600;
+        border: 2px solid slategray;
+        color: #ffffff;
+    }
+    .text blockquote{
+        text-align: center;
+        font-size: 25px;
+        color:#ffffff ;
+
+    }
+    @media(max-width:768px) {
+        .logo{
+            flex-direction: column;
+        }
+        .box{
+            justify-content: none;
+        }
+        .tbl{
+            overflow-x: auto;
+        }
+        .tbl th,td{
+            padding: 2px;
+        }
+        .solar p{
+            font-size: 5vw;
+        }
+        .text blockquote{
+            font-size: 3vw;
+        }
+    }
