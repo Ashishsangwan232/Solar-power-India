@@ -222,7 +222,7 @@
         box-shadow: 0px 0px 5px rgb(17, 24, 99);
     }
     .map{
-        padding: 0px 100px;
+        padding: 0px 10px;
         transform: scale(0.9);
         border: 2px solid rgb(0, 5, 74) ;
     }
@@ -272,24 +272,7 @@
         pointer-events: none;
         z-index: 100;
     }
-    @media(max-width:768px) {
-        .logo{
-            flex-direction: column;
-        }
-        .solar p{
-            font-size: 10vw;
-        }
-        .One_sun p,h1{
-            font-size: 3vw;
-        }
-        .Social{
-            flex-direction: column;
-        }
-        .cont{
-            font-size: 2vw;
-        }
-        
-    } 
+ 
     .contx{
         list-style: none;
         display: flex;
@@ -430,7 +413,8 @@
     .additional-sections h2 {
         text-align: center;
         color: #e0b54a;
-        font-size: 24px;
+        font-size: 1.5em;
+        /* font-size: 24px; */
         margin-bottom: 20px;
         border-bottom: 2px solid #e0b54a;
         padding-bottom: 10px;
@@ -452,7 +436,7 @@
         background-color: #1f1f3d;
         padding: 20px;
         border-radius: 8px;
-        width: 30%;
+        /* width: 30%; */
         text-align: center;
         transition: transform 0.3s, box-shadow 0.3s;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
@@ -473,7 +457,7 @@
     .story-card h3 {
         color: #e0b54a;
         margin-top: 15px;
-        font-size: 18px;
+        /* font-size: 18px; */
     }
     .story-card a {
         color: #e0b54a;
@@ -495,6 +479,7 @@
         margin-top: 10px;
     }
     .events-list {
+        overflow: hidden;
         list-style-type: none;
         padding: 0;
         margin: 20px auto;
@@ -524,6 +509,7 @@
         margin-bottom: 5px;
     }
     .social-feed {
+        overflow: hidden;
         background-color: #1f1f3d;
         padding: 25px;
         margin: 30px auto;
@@ -551,4 +537,33 @@
     .social-post a:hover {
         text-decoration: underline;
     }
-    
+    @media(max-width:768px) {
+        .logo{
+            flex-direction: column;
+        }
+        .solar p{
+            font-size: 10vw;
+        }
+        .One_sun p,h1{
+            font-size: 3vw;
+        }
+        .Social{
+            flex-direction: column;
+        }
+        .cont{
+            font-size: 2vw;
+        }
+        .Sun-para{
+            line-height:1.2;
+        }
+        .side2 nav a{
+            font-size: 10px;
+            font-weight: 500;
+        }
+        .topmost img{
+            width: 60px;
+        }
+        #com_name{
+            font-size: 15px;
+        }
+    }
