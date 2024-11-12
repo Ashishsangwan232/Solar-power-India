@@ -20,11 +20,6 @@
         background-size: cover;
         grid-area: 1/1/3/16;
         padding:10px 0px;
-        display: flex;
-        flex-direction: column;
-        /* align-items: center; */
-        justify-content: center;
-        align-content: center;
         
     }
     .topmost{
