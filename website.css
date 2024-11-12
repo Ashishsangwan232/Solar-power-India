@@ -13,16 +13,21 @@
         grid-template-rows: repeat(65,1fr);
     }
     .top-bar{
+        /* border: 2px solid red; */
         align-content: center;
         background-image: url(sky\ back.png);
         background-position: center;
         background-size: cover;
         grid-area: 1/1/3/16;
         padding:10px 0px;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        justify-content: center;
+        align-content: center;
         
     }
     .topmost{
-        justify-content: space-between;
         backdrop-filter: blur(2px);
         box-shadow: 0px 0px 20px rgb(0, 0, 0);
     }
@@ -112,6 +117,7 @@
         position: sticky;
         top: 0;
         align-self:start;
+
     }
 
     .side2{
@@ -537,6 +543,33 @@
     .social-post a:hover {
         text-decoration: underline;
     }
+    .forphone{
+        /* border: 2px solid red; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top:2em ;
+        text-align: center;
+        line-height: 1.6;
+        display: none;
+        /* visibility: hidden; */
+    }
+    .forphone a{
+        color:#ffffff;
+        text-decoration: none;
+        flex-direction: row;
+        margin: auto;
+        padding: 5px;
+        font-size: 2.5vw;
+        background-color: #00006983;
+        border-radius: 20px;
+        /* font-weight: 400; */
+        
+    }
+    .forphone a:hover{
+        /* font-size: 2.6vw; */
+        font-weight: 600;
+    }
     @media(max-width:768px) {
         .logo{
             flex-direction: column;
@@ -565,5 +598,18 @@
         }
         #com_name{
             font-size: 15px;
+        }
+    }
+    @media(max-width:640px) {
+        .side_bar{
+            /* grid-area: 0; */
+            visibility: hidden;
+        }
+        .content{
+            grid-area:3/1/66/16;
+        }
+        .forphone{
+            display: block;
+            /* visibility: visible; */
         }
     }
