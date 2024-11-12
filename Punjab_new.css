@@ -294,4 +294,8 @@
             justify-content: center;
 
         }
+        .side2 nav a{
+            font-size: 13px;
+            padding: 8px;
+        }
     }
