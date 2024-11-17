@@ -131,13 +131,92 @@
             font-size: 1.1em;
             padding: 10px;
         }
-        footer {
-            background-color: #1b1b2f;
-            color: #bbbbbb;
-            text-align: center;
-            padding: 10px;
-            margin-top: 20px;
+           .bottom{
+            display: flex;
+            flex-wrap:wrap ;
+            justify-content: space-evenly;
         }
+        .bottom p{
+            color: aliceblue;
+            
+        }
+    .fotr{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0px 20px;
+        gap: 10px;
+        font-size: 12px;
+    }
+    .footer-follow{
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+        max-width: 400px;
+        padding: 5px;
+        overflow: hidden;
+    }
+    .address-footer{
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 5px;
+        width: 100%;
+        max-width: 400px;
+        overflow: hidden;
+        
+    }
+    .foot-link{
+        list-style: none;
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+    .footer-follow h4{
+        color: #ffffff;
+        padding: 10px;
+        font-size: 1.6em;
+    }
+    .address-footer h3{
+        color: #ffffff;
+        padding: 10px;
+        font-size: 1.6em;
+        
+    }
+    .foot-cont{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        list-style: none;
+        width: 100%;
+        max-width: 100px;
+        padding: 10px;
+        
+    }
+    .foot-cont img{
+        width: 25px;
+    }
+    .foot-cont a{
+        color: #ffffff;
+        text-decoration: none;
+    }
+    .foot-add{
+        list-style: none;
+        color: #ffffff;
+        padding: 5px;
+    }
+    .foot-add a{
+        color: #ffffff;
+        text-decoration: none;
+    }
+    .pppp{
+        background-color: #121212;
+        text-align: center;
+        /* height: 100px; */
+    }
     </style>
 </head>
 <body>
@@ -280,7 +359,9 @@
                 </div>
 
             </div>
-            <p>&copy; 2024 Solar Power in India. All rights reserved.</p>
+            <div class="pppp">
+                <p>&copy; 2024 Solar Power in India. All rights reserved.</p>
+            </div> 
         </footer>
 
 </body>
