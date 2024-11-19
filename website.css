@@ -121,7 +121,6 @@
     }
     .side2 nav a{
         color: #ffffff;
-        /* font-size: 19px; */
         font-weight: 600;
         display: flex;
         justify-content: flex-end;
@@ -172,11 +171,12 @@
     }
     .textmain{
         padding: 10px 0px;
-        align-content: center;
+        align-items: center;
     }
     .textmain p{
         font-weight: 600;
         font-size: 3vw;
+        align-content: center;
         letter-spacing: 3px;
         color: #fbfbfb;
     }
@@ -219,33 +219,22 @@
         word-spacing: 8px;
     }
     
-    .mapp{
-        box-shadow: 0px 0px 5px rgb(17, 24, 99);
+    
+    .map-section {
+        text-align: center;
+        padding: 50px 20px;
     }
-    .map{
-        padding: 0px 10px;
-        transform: scale(0.9);
-        border: 2px solid rgb(0, 5, 74) ;
+    .map-section h2{
+        color: #ffffff;
     }
-    .clickmap{
-        margin: auto;
-        display: flex;
-        border:  2px solid rgb(0, 0, 0);
-    }
-    .clickmap p{
-        
-        color: aliceblue;
-        font-size: 20px;
-    }
-    .map path{
-        fill: rgb(255, 188, 5);
-        transition: 0.2s,0.3s;
-    }
-    .map path:hover{
-        fill: rgb(255, 255, 255);
-        cursor: pointer;
-        transform: scale(1.0040);
-    }
+      
+    .map {
+        width: 92%;
+        height: 550px;
+        border: none;
+        border-radius: 20px;
+        box-shadow: 0px 4px 20px rgba(124, 124, 124, 0.341);
+      }
     .footer {
         width: auto;
         background-image: url(backfoot.jpg);
@@ -538,33 +527,41 @@
     .social-post a:hover {
         text-decoration: underline;
     }
-    .forphone{
-        /* border: 2px solid red; */
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top:2em ;
-        text-align: center;
-        line-height: 1.6;
+    .forphone {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
         display: none;
-        /* visibility: hidden; */
+        flex-direction: column;
+        background-color: #f7f7f714;
+        border-radius: 10px; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        overflow: hidden; 
     }
-    .forphone a{
-        color:#ffffff;
+    .forphone li {
+        margin: 0;
+    }
+    .forphone a {
+        width: 100;
+        display: block;
+        padding: 15px 20px; 
         text-decoration: none;
-        flex-direction: row;
-        margin: auto;
-        padding: 5px;
-        font-size: 2.5vw;
-        background-color: #00006983;
-        border-radius: 20px;
-        /* font-weight: 400; */
-        
+        color: #0077cc; 
+        font-size: 16px;
+        font-weight: bold;
+        border-bottom: 1px solid #ddd;
+        transition: background-color 0.3s, color 0.3s;
     }
-    .forphone a:hover{
-        /* font-size: 2.6vw; */
-        font-weight: 600;
+    .forphone li:last-child a {
+        border-bottom: none;
     }
+    .forphone a:hover,
+    .forphone a.active {
+        background-color: #014473;
+        color: #fff; 
+    }
+  
     @media(max-width:768px) {
         .logo{
             flex-direction: column;
@@ -600,11 +597,44 @@
             /* grid-area: 0; */
             visibility: hidden;
         }
+        .top-bar{
+            grid-area: 1/1/2/16;
+        }
         .content{
-            grid-area:3/1/66/16;
+            grid-area:2/1/66/16;
         }
         .forphone{
-            display: block;
+            /* display: block; */
+            display: flex;
             /* visibility: visible; */
         }
+        .forphone {
+            width: 100%; /* Full width */
+          }
+        
+          .forphone a {
+            text-align: center; /* Center align text for mobile */
+          }
+        
+        .map{
+            height: 400px;
+        }
+        .box p{
+            text-align: center;
+            font-size: 15px;
+            /* letter-spacing: 2px; */
+            color: white;
+            /* word-spacing: 4px; */
+            font-weight: 600;
+            text-shadow:0px 0px 50px rgb(0, 0, 0);
+        }
+        .textmain p{
+            font-weight: 600;
+            font-size: 4vw;
+            letter-spacing: 3px;
+            color: #fbfbfb;
+        }
+        
     }
+    
+  
