@@ -607,6 +607,9 @@
         #com_name{
             font-size: 15px;
         }
+        .One_sun{
+            gap:0px
+        }
     }
     @media(max-width:640px) {
         .side_bar{
@@ -614,12 +617,7 @@
             display: none;
             visibility: hidden;
         }
-        .top-bar{
-            grid-area: 1/1/2/16;
-        }
-        .content{
-            grid-area:2/1/66/16;
-        }
+        
         .forphone{
             display: flex;
         }
