@@ -114,7 +114,7 @@
         background-image:linear-gradient(to bottom right, rgb(0, 25, 123),
          black,rgb(0, 0, 46) ,
           black,rgb(15, 0, 131));
-        /* width: ; */
+        width: 100%;
     }
     .new{
         margin: 0;
