@@ -608,7 +608,7 @@
             font-size: 15px;
         }
         .One_sun{
-            gap:0px
+            gap:0px;
         }
     }
     @media(max-width:640px) {
